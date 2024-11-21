@@ -1,0 +1,257 @@
+/* NIGHT MODE */
+
+:root {
+  --background: linear-gradient(
+    120deg,
+    rgb(199, 162, 162),
+    rgb(194, 214, 245)
+  ); /*background*/
+  --font: #f1f1f1; /*main*/
+  --ecriture: #262626; /*texte*/
+  --image: url(../../moon.svg); /*lune*/
+  --night_image: rgb(128, 128, 128);
+  --facebook: rgb(0, 0, 255); /* facebook night mode */
+  --insta: #dd2a7b; /* insta night mode */
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.night {
+  border-radius: 50px;
+  background-image: var(--image);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35px;
+  cursor: pointer; /* rend la souris en mode click */
+  background-color: var(--night_image);
+  width: 50px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 5% 10%;
+  /* background-image: linear-gradient(
+    120deg,
+    rgb(37, 54, 61),
+    rgb(104, 70, 57)
+  ); */
+  background-image: var(
+    --background
+  ); /* change de couleur aprés le night mode */
+}
+
+main {
+  background-color: var(
+    --font
+  ); /* blanc au depart, change de couleur aprés le night mode */
+  padding: 5%;
+  border: solid gray 1px;
+  border-radius: 20px;
+  box-shadow: 5px 10px rgb(158, 156, 156);
+}
+
+/* TOP */
+
+#top {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 10rem;
+  margin: 15px;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+/* TOP-TEXT */
+
+.description p {
+  color: var(--ecriture); /* noir, devient blanc aprés night mode*/
+  font-size: 100%;
+  width: 70%;
+  height: 50%;
+}
+
+#top .description h1 {
+  color: var(--ecriture); /* noir, devient blanc aprés night mode */
+  font-size: 200%;
+}
+
+/* MEDIA QUERIES TOP */
+@media screen and (max-width: 780px) {
+  #top {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    color: var(--ecriture); /* noir, devient blanc aprés night mode */
+    display: flex;
+    justify-content: center;
+  }
+
+  .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description p{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* MID */
+
+/* progress bar in another css */
+
+#mid {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INFO */
+
+.info {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mid .info p {
+  color: var(--ecriture);
+}
+
+#mid .info h2 {
+  color: var(--ecriture); /* noir, devient blanc aprés night mode */
+  margin: 2px;
+  font-size: 2rem;
+  border-bottom: solid 1px;
+}
+
+#mid .info h3 {
+  color: var(--ecriture); /* noir, devient blanc aprés nigtht mode */
+  margin: 5px;
+}
+
+/* BOTTOM */
+
+#bottom .name {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#bottom input {
+  color: var(--ecriture);
+  width: 100%;
+}
+
+#bottom textarea {
+  /* color: var(--ecriture); */
+  margin: 20px 0;
+  resize: none;
+}
+
+#bottom .message {
+  color: var(--ecriture);
+  width: 82%;
+  height: 3%;
+}
+
+#bottom .send {
+  color: var(--ecriture);
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* NETWORK */
+
+#reseaux {
+  display: flex;
+  align-items: center;
+}
+
+/* INSTAGRAM */
+
+.insta {
+  fill: var(--insta);
+  border-radius: 0%;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.facebook {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 20px;
+  fill: var(--facebook); /* devient plus clair en night mode */
+}
+
+.github {
+  fill: var(--ecriture); /* noir, devient blanc aprés le dark mode */
+  margin-left: 5px;
+  width: 20px;
+}
+
+/* NETWORK HOVER */
+
+.insta:hover {
+  fill: #ec6aa5;
+}
+
+.facebook:hover {
+  fill: rgb(84, 84, 233);
+}
+
+.github:hover {
+  fill: rgb(80, 79, 79);
+}
+
+/* BOTTOM */
+#bottom {
+  border-top: solid gray 1px;
+  margin: 2%;
+}
+
+#bottom h2 {
+  color: var(--ecriture);
+  font-size: 2rem;
+}
+
+#bottom .info_form {
+  display: flex;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: solid gray 1px;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .titre h4 {
+  color: rgb(97, 95, 95);
+  font-size: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 780px) {
+  #mid {
+    display: flex;
+    flex-direction: column;
+  }
+  .pro_flex {
+    display: flex;
+    justify-content: center;
+  }
+}
