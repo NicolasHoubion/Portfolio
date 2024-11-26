@@ -12,6 +12,7 @@
   --night_image: rgb(128, 128, 128);
   --linkedin: #0077b5; /* facebook night mode */
   --insta: #dd2a7b; /* insta night mode */
+  --input: background-color: #f1f1f1;
 }
 
 /* RESET CSS */
@@ -149,10 +150,14 @@ main {
 }
 
 #bottom input {
+  color: var(--ecriture);
+  background-color: var(--input);
   width: 100%;
 }
 
 #bottom textarea {
+  color: var(--ecriture);
+  background-color: var(--input);
   margin: 20px 0;
   resize: none;
 }
@@ -163,6 +168,7 @@ main {
 }
 
 #bottom .send {
+  color: var(--ecriture);
   padding: 10px;
   margin-top: 30px;
 }
