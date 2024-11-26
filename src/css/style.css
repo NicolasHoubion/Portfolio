@@ -10,7 +10,7 @@
   --ecriture: #262626; /*texte*/
   --image: url(../../moon.svg); /*lune*/
   --night_image: rgb(128, 128, 128);
-  --facebook: rgb(0, 0, 255); /* facebook night mode */
+  --linkedin: #0077b5; /* facebook night mode */
   --insta: #dd2a7b; /* insta night mode */
 }
 
@@ -36,10 +36,10 @@ body {
   min-height: 100vh;
   margin: 5% 10%;
   /* background-image: linear-gradient(
-    120deg,
-    rgb(37, 54, 61),
-    rgb(104, 70, 57)
-  ); */
+      120deg,
+      rgb(37, 54, 61),
+      rgb(104, 70, 57)
+    ); */
   background-image: var(
     --background
   ); /* change de couleur aprés le night mode */
@@ -101,7 +101,7 @@ main {
     flex-direction: column;
     align-items: center;
   }
-  .description p{
+  .description p {
     display: flex;
     justify-content: center;
   }
@@ -149,24 +149,20 @@ main {
 }
 
 #bottom input {
-  color: var(--ecriture);
   width: 100%;
 }
 
 #bottom textarea {
-  /* color: var(--ecriture); */
   margin: 20px 0;
   resize: none;
 }
 
 #bottom .message {
-  color: var(--ecriture);
   width: 82%;
   height: 3%;
 }
 
 #bottom .send {
-  color: var(--ecriture);
   padding: 10px;
   margin-top: 30px;
 }
@@ -187,11 +183,11 @@ main {
   width: 20px;
 }
 
-.facebook {
+.linkedin {
   margin-left: 5px;
   margin-right: 5px;
   width: 20px;
-  fill: var(--facebook); /* devient plus clair en night mode */
+  fill: var(--linkedin); /* devient plus clair en night mode */
 }
 
 .github {
